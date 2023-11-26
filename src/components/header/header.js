@@ -1,20 +1,29 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
-import { keyframes } from '@emotion/core';
-import { Link } from 'react-scroll';
-import Logo from 'components/logo';
-import LogoDark from 'assets/logo-dark.svg';
-import LogoWhite from 'assets/logo.svg';
-import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
-import MobileDrawer from './mobile-drawer';
-import menuItems from './header.data';
+import { jsx, Container, Flex, Button, Box, Text } from "theme-ui";
+import { keyframes } from "@emotion/core";
+import { Link } from "react-scroll";
+import Logo from "components/logo";
+import appLogo from "assets/teraSyncSolutionsLogo.png";
+import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
+import MobileDrawer from "./mobile-drawer";
+import menuItems from "./header.data";
 
 export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={className === 'sticky' ? LogoDark : LogoWhite} />
+          <Box sx={{ display: "flex" }}>
+            <Logo src={appLogo} />
+            <Box style={{ lineHeight: "normal" }}>
+              <p style={{ margin: "0px", paddingTop: "12px", fontWeight:"bold" }}>
+                TERA SYNC SOLUTIONS
+              </p>
+              <p style={{ margin: "0px", fontSize: "9px",paddingLeft:'18.5px' }}>
+                YOUR VISION, OUR INNOVATION
+              </p>
+            </Box>
+          </Box>
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
