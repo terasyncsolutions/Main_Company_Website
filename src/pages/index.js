@@ -14,6 +14,7 @@ import TestimonialCard from 'sections/testimonial';
 import SecurePayment from 'sections/secure-payment';
 import Package from 'sections/package';
 import Faq from 'sections/faq';
+import AboutUs from 'sections/about-us';
 
 export default function IndexPage() {
   return (
@@ -29,6 +30,7 @@ export default function IndexPage() {
           <WorkFlow />
           <TestimonialCard />
           <SecurePayment />
+          <AboutUs />
           <Package />
           <Faq />
         </Layout>

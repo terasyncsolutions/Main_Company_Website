@@ -90,6 +90,9 @@ export default {
     feature: {
       py: [8, null, 9, null, null, 10],
     },
+    aboutus: {
+      py: [8, null, 9, null, null, 10],
+    },
     partner: {
       pt: [2, null, null, 5],
       pb: [8, null, 9, null, null, 10],
