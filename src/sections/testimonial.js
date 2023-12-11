@@ -151,13 +151,13 @@ const styles = {
         null,
         'calc(50% + 865px)',
       ],
-      mr: ['auto', null, null, null, null, null, null, '-220px'],
+      mr: ['auto', null, null, null, null, null, null, '0px'],
       ml: 'auto',
       '.react-multi-carousel-item': {
         transition: 'all 0.25s',
       },
       '.react-multi-carousel-item--active:nth-of-type(4n)': {
-        opacity: '0.5',
+        opacity: '1',
         '@media screen and (max-width: 1620px)': {
           opacity: 1,
         },
